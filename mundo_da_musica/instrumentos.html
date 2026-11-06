@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça instrumentos, suas características e como começar a tocar.">
+    <title>Instrumentos | Mundo da Música</title>
+    <link rel="icon" href="img/notamusical.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho bg-light">
+        <a class="logo" href="index.html">
+            <span class="logo-icone" aria-hidden="true">♫</span>
+            <span>Mundo da Música</span>
+        </a>
+        <button class="botao-menu" id="botao-menu" type="button"
+                aria-label="Abrir menu de navegação" aria-controls="menu-principal"
+                aria-expanded="false">☰</button>
+        <nav class="menu" id="menu-principal" aria-label="Navegação principal">
+            <a href="index.html">Início</a>
+            <a href="musicas.html">Músicas</a>
+            <a href="artistas.html">Artistas</a>
+            <a href="playlists.html">Playlists</a>
+            <a href="cifras.html">Cifras</a>
+            <a href="instrumentos.html" aria-current="page">Instrumentos</a>
+            <a href="aulas.html">Aulas</a>
+            <a href="teoria.html">Teoria</a>
+            <a href="novidades.html">Novidades</a>
+            <a href="sobre.html">Sobre</a>
+        </nav>
+    </header>
+    <main>
+        <section class="conteudo-pagina">
+            <div class="introducao-pagina">
+                <p class="etiqueta">DESCUBRA SEU SOM</p>
+                <h1>Instrumentos musicais</h1>
+                <p>Conheça instrumentos, suas características e como começar a tocar.</p>
+            </div>
+
+            <label for="busca-itens" class="rotulo-busca">Buscar nesta página</label>
+            <input class="campo-busca" type="search" id="busca-itens"
+                   placeholder="Digite para filtrar..." autocomplete="off">
+            <p id="mensagem-vazia" class="mensagem-vazia" hidden>Nenhum resultado encontrado.</p>
+            <div class="lista-itens">
+                <article class="card card-conteudo border border-warning" data-busca="violão cordas">
+                    <h2>Violão</h2>
+                    <p>Instrumento de cordas muito usado em diversos estilos.</p>
+                </article>
+                <article class="card card-conteudo border border-danger" data-busca="guitarra cordas">
+                    <h2>Guitarra</h2>
+                    <p>Explore timbres, efeitos e riffs.</p>
+                </article>
+                <article class="card card-conteudo border border-dark" data-busca="teclado piano">
+                    <h2>Teclado e piano</h2>
+                    <p>Conheça as teclas, notas e melodias.</p>
+                </article>
+                <article class="card card-conteudo border border-success" data-busca="bateria percussão">
+                    <h2>Bateria</h2>
+                    <p>Estude ritmo, coordenação e pulsação.</p>
+                </article>
+                <article class="card card-conteudo border border-secondary" data-busca="baixo cordas">
+                    <h2>Baixo</h2>
+                    <p>Descubra a base rítmica e harmônica.</p>
+                </article>
+                <article class="card card-conteudo border border-info" data-busca="atabaque percussão">
+                    <h2>Atabaque</h2>
+                    <p>Conheça esse instrumento de percussão e seus contextos culturais.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <a class="logo logo-rodape" href="index.html"><span class="logo-icone" aria-hidden="true">♫</span><span>Mundo da Música</span></a>
+        <p>Descubra, explore e aprenda através da música.</p>
+        <p class="copyright">&copy; <span id="ano-atual">2026</span> Mundo da Música. Projeto acadêmico.</p>
+    </footer>
+</body>
+</html>
